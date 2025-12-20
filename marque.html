@@ -47,6 +47,13 @@
     </ul>
   </div>
 </section>
+<script>
+  const toggle = document.querySelector('.menu-toggle');
+  const menu = document.querySelector('.lux-menu');
 
+  toggle.addEventListener('click', () => {
+    menu.classList.toggle('open');
+  });
+</script>
 </body>
 </html>
