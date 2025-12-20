@@ -26,6 +26,8 @@ body {
     ),
     url("hero.jpg") center/cover no-repeat;
 }
+  padding-top: 220px;
+}
 .eyebrow {
   text-transform: uppercase;
   letter-spacing: 0.14em;
