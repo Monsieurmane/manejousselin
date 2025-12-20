@@ -422,24 +422,4 @@ body {
     padding-top: 140px;
   }
 }
-.package-link {
-  text-decoration: none;
-  color: inherit;
-  display: block;
-}
 
-.package-link:hover .package {
-  transform: translateY(-4px);
-  transition: transform 0.3s ease;
-}
-
-.package-cta {
-  display: inline-block;
-  margin-top: 15px;
-  font-size: 13px;
-  color: var(--soft-beige);
-}
-
-.package-cta.gold {
-  color: var(--gold-accent);
-}
