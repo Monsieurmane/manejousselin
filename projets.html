@@ -1,1 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Projets — Manejousselin</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
 
+<body>
+
+<header class="lux-header">
+  <div class="lux-nav container">
+    <div class="lux-logo">
+      <a href="index.html">Manejousselin</a>
+    </div>
+
+    <button class="menu-toggle">☰</button>
+
+    <nav class="lux-menu">
+      <a href="services.html">Services</a>
+      <a href="projets.html">Projets</a>
+      <a href="marque.html">Marque</a>
+      <a href="espace.html">Intérieur</a>
+      <a href="premium.html">Premium</a>
+      <a href="#contact" class="lux-cta">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="section projects">
+  <div class="container">
+
+    <h1>Projets réalisés</h1>
+    <p class="section-text">
+      Une sélection de projets où identité de marque, espace et expérience
+      ont été pensés comme un ensemble cohérent.
+    </p>
+
+    <!-- PROJET 1 -->
+    <article class="project">
+      <div class="project-info">
+        <h2>Restaurant & identité de marque</h2>
+        <p class="project-meta">Dakar · Design intérieur & branding</p>
+        <p class="project-desc">
+          Conception d’une identité globale et d’un espace intérieur
+          aligné avec le positionnement du lieu et l’expérience client.
+        </p>
+      </div>
+
+      <div class="project-gallery">
+        <img src="projects/projet-1-1.jpg" alt="Projet restaurant">
+        <img src="projects/projet-1-2.jpg" alt="Projet restaurant">
+      </div>
+
+      <blockquote class="testimonial">
+        “Le travail a dépassé nos attentes. L’espace et l’image de marque
+        reflètent parfaitement notre vision.”
+        <span>— Client, Restaurant</span>
+      </blockquote>
+    </article>
+
+    <!-- PROJET 2 -->
+    <article class="project">
+      <div class="project-info">
+        <h2>Concept retail & aménagement</h2>
+        <p class="project-meta">Europe · Aménagement intérieur</p>
+        <p class="project-desc">
+          Reconfiguration de l’espace, choix des matériaux
+          et direction esthétique globale.
+        </p>
+      </div>
+
+      <div class="project-gallery">
+        <img src="projects/projet-2-1.jpg" alt="Projet retail">
+        <img src="projects/projet-2-2.jpg" alt="Projet retail">
+      </div>
+
+      <blockquote class="testimonial">
+        “Une approche rigoureuse et très professionnelle.
+        Chaque détail a été pensé avec précision.”
+        <span>— Client, Retail</span>
+      </blockquote>
+    </article>
+
+  </div>
+</section>
+
+<script>
+  const toggle = document.querySelector('.menu-toggle');
+  const menu = document.querySelector('.lux-menu');
+
+  toggle.addEventListener('click', () => {
+    menu.classList.toggle('open');
+  });
+</script>
+
+</body>
+</html>
