@@ -682,3 +682,10 @@ footer a {
   object-fit: cover;
   filter: brightness(0.9); /* consistent mood */
 }
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+}
+
+body, p, li {
+  font-family: 'Inter', sans-serif;
+}
