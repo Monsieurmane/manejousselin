@@ -52,20 +52,19 @@ h1 {
 }
 
 /* BUTTON */
-.btn {
-  display: inline-block;
-  padding: 14px 32px;
-  border: 1px solid #C9A15A;
+.btn-primary {
+  background-color: var(--gold-accent);
+  color: var(--dark-main);
+  padding: 14px 28px;
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
   text-decoration: none;
-  color: #C9A15A;
-  font-size: 14px;
-  letter-spacing: 0.08em;
-  transition: all 0.3s ease;
+  display: inline-block;
 }
 
-.btn:hover {
-  background-color: #C9A15A;
-  color: #1B1B1B;
+.btn-primary:hover {
+  opacity: 0.9;
 }
 
 /* SECTIONS */
@@ -666,4 +665,14 @@ h1 {
 
 h2 {
   font-size: var(--font-lg);
+}
+footer {
+  padding: 60px 0;
+  background: var(--dark-secondary);
+  color: var(--soft-beige);
+}
+
+footer a {
+  color: var(--soft-beige);
+  text-decoration: none;
 }
