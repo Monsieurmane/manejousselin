@@ -778,12 +778,12 @@ footer a {
   align-items: flex-start;
 }
 
-.copyright {
+  .copyright {
   margin-top: 24px;
-}
-.copyright {
+  }
+  .copyright {
   padding-left: 0;
-}
+  }
 .footer-left p {
   padding-left: 0;
 }
