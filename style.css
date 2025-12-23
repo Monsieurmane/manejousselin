@@ -674,6 +674,68 @@ footer a {
   object-fit: cover;
   filter: brightness(0.9); /* consistent mood */
 }
+.site-footer {
+  background-color: #121212; /* dark élégant */
+  color: #e5e5e5;
+  padding: 60px 80px 30px;
+  font-size: 14px;
+}
 
+.site-footer a {
+  color: #e5e5e5;
+  text-decoration: none;
+}
+
+.site-footer a:hover {
+  opacity: 0.7;
+}
+
+/* Container principal */
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+/* Colonne gauche */
+.footer-left {
+  max-width: 40%;
+}
+
+.footer-title {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+/* Colonne droite */
+.footer-right {
+  text-align: right;
+}
+
+.footer-socials {
+  display: flex;
+  justify-content: flex-end;
+  gap: 18px;
+  margin-bottom: 18px;
+}
+
+.footer-socials img {
+  width: 20px;
+  height: 20px;
+}
+
+/* Mentions légales */
+.footer-legal {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+/* Copyright */
+.footer-bottom {
+  margin-top: 40px;
+  text-align: left;
+  opacity: 0.6;
+}
 
 
