@@ -781,3 +781,29 @@ footer a {
 .copyright {
   margin-top: 24px;
 }
+.copyright {
+  padding-left: 0;
+}
+.footer-left p {
+  padding-left: 0;
+}
+.footer {
+  color: #b8b8b8;
+}
+.footer p,
+.footer a {
+  color: inherit;
+}
+.footer a {
+  text-decoration: none;
+  opacity: 0.85;
+}
+
+.footer a:hover {
+  opacity: 1;
+}
+.footer-legal a {
+  color: inherit;
+  opacity: 0.8;
+  font-size: 0.9rem;
+}
