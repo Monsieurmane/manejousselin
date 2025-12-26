@@ -1,25 +1,19 @@
-@media (max-width: 768px) {
-  h1 { font-size: 32px; }
+/* ===== RESET ===== */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  .lux-menu {
-    display: none;
-    flex-direction: column;
-  }
-
-  .lux-menu.open {
-    display: flex;
-  }
-
-  .footer-container {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 30px;
-  }
-
-  .footer-socials {
-    justify-content: center;
-  }
+/* ===== LUXURY COLOR SYSTEM ===== */
+:root {
+  --dark-main: #141414;
+  --dark-secondary: #1C1C1C;
+  --gold-accent: #C9A15A;
+  --soft-beige: #E6DCCB;
+  --muted-text: #8F8A84;
 }
 body {
   font-family: 'Inter', sans-serif;
@@ -32,24 +26,6 @@ a {
   color: var(--gold-accent);
   text-decoration: none;
 }
-
-.container {
-  width: 90%;
-  max-width: 1100px;
-  margin: 0 auto;
-}
-body {
-  font-family: 'Inter', sans-serif;
-  background: var(--dark-main);
-  color: var(--soft-beige);
-  line-height: 1.6;
-}
-
-a {
-  color: var(--gold-accent);
-  text-decoration: none;
-}
-
 .container {
   width: 90%;
   max-width: 1100px;
@@ -83,8 +59,9 @@ a {
 }
 
 .lux-menu a {
-  font-size: 15px;
+  font-size: 13px;
   color: var(--muted-text);
+  letter-spacing: 0.6px;
 }
 
 .lux-menu a:hover {
@@ -93,10 +70,10 @@ a {
 
 .lux-cta {
   color: var(--gold-accent);
-  border-bottom: 1px solid rgba(201,161,90,0.6);
+  border-bottom: 1px solid var(--gold-accent);
 }
 .hero {
-  padding: 220px 0 160px;
+  padding: 160px 0;
   background:
     linear-gradient(rgba(27,27,27,0.85), rgba(27,27,27,0.85)),
     url("hero.jpg") center / cover no-repeat;
@@ -105,13 +82,13 @@ a {
 h1 {
   font-family: 'Playfair Display', serif;
   font-size: 48px;
-  margin-bottom: 30px;
+  font-weight: 500;
 }
 
 .hero-text {
   max-width: 600px;
-  color: var(--muted-text);
   font-size: 18px;
+  color: var(--muted-text);
 }
 .btn {
   display: inline-block;
@@ -121,27 +98,11 @@ h1 {
   font-size: 14px;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  transition: 0.3s ease;
 }
 
 .btn:hover {
   background: #fff;
   color: #111;
-}
-.section {
-  padding: 110px 0;
-  background: var(--dark-secondary);
-}
-
-h2 {
-  font-family: 'Playfair Display', serif;
-  font-size: 34px;
-  margin-bottom: 30px;
-}
-
-.section-text {
-  max-width: 720px;
-  color: var(--muted-text);
 }
 .service-card {
   background: rgba(30,30,30,0.9);
@@ -149,40 +110,13 @@ h2 {
   padding: 40px;
   margin-bottom: 40px;
 }
-
-.service-card h2 {
-  color: var(--gold-accent);
-}
-
-.service-card ul {
-  list-style: none;
-}
-
-.service-card ul li::before {
-  content: "✔";
-  color: var(--gold-accent);
-}
-.project-gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 20px;
-}
-
-.project-gallery img {
-  width: 100%;
-  height: 280px;
-  object-fit: cover;
-  filter: brightness(0.9);
-}
 .site-footer {
-  background: #121212;
+  background: var(--dark-secondary);
   padding: 60px 0 30px;
   font-size: 14px;
 }
 
 .footer-container {
-  max-width: 1100px;
-  margin: auto;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -191,49 +125,72 @@ h2 {
 .footer-left {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 10px;
+}
+
+.footer-right {
+  text-align: right;
 }
 
 .footer-socials {
   display: flex;
-  gap: 18px;
   justify-content: flex-end;
+  gap: 18px;
+  margin-bottom: 16px;
 }
 
 .footer-socials img {
   width: 20px;
   filter: invert(1);
+  opacity: 0.8;
 }
 
-.footer-legal {
-  margin-top: 16px;
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
+.footer-socials img:hover {
+  opacity: 1;
 }
 
-.footer-bottom {
-  margin-top: 40px;
+.footer-legal a {
+  display: block;
+  color: var(--soft-beige);
+  opacity: 0.7;
+}
+
+.footer-legal a:hover {
+  opacity: 1;
+}
+
+.copyright {
+  margin-top: 20px;
   opacity: 0.6;
 }
 @media (max-width: 768px) {
 
   .lux-menu {
     display: none;
+    position: absolute;
+    top: 72px;
+    width: 100%;
+    background: var(--dark-secondary);
+    flex-direction: column;
+    align-items: center;
+    padding: 24px 0;
+  }
+
+  .lux-menu.open {
+    display: flex;
   }
 
   .footer-container {
     flex-direction: column;
-    align-items: center;
     text-align: center;
     gap: 30px;
   }
 
-  .footer-socials {
-    justify-content: center;
+  .footer-right {
+    text-align: center;
   }
 
-  .footer-bottom {
-    text-align: center;
+  .footer-socials {
+    justify-content: center;
   }
 }
