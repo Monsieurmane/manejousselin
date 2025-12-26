@@ -20,37 +20,28 @@
     Aucune donnée n’est cédée à des tiers.
   </p>
 </section>
-<footer class="footer-editorial">
-  <div class="container footer-columns">
 
-    <!-- Colonne 1 -->
-</footer>
-  <footer class="site-footer">
+<!-- ================= FOOTER ================= -->
+<footer class="site-footer">
   <div class="footer-container">
 
-    </footer>
-  <footer class="site-footer">
-  <div class="footer-container">
-
-    <!-- Colonne gauche -->
+    <!-- Gauche -->
     <div class="footer-left">
-      <p class="footer-title">© manejousselin 2025</p>
+      <p class="footer-title">manejousselin - House of Design</p>
+      <p>Design d’intérieur & branding</p>
+      <p>consult@manejousselin.com</p>
+      <div class="footer-bottom">
+        © manejousselin 2025
+      </div>
     </div>
 
-     <!-- Colonne droite -->
+    <!-- Droite -->
     <div class="footer-right">
       <div class="footer-socials">
-        <a href="#" aria-label="Instagram">
-          <img src="icons/instagram.svg" alt="Instagram">
-        </a>
-        <a href="#" aria-label="TikTok">
-          <img src="icons/tiktok.svg" alt="TikTok">
-        </a>
-        <a href="#" aria-label="X">
-          <img src="icons/x.svg" alt="X">
-        </a>
+        <a href="#"><img src="icons/instagram.svg" alt="Instagram"></a>
+        <a href="#"><img src="icons/tiktok.svg" alt="TikTok"></a>
+        <a href="#"><img src="icons/x.svg" alt="X"></a>
       </div>
-
       <div class="footer-legal">
         <a href="imprint.html">Mentions légales</a>
         <a href="privacy.html">Politique de confidentialité</a>
@@ -59,5 +50,16 @@
 
   </div>
 </footer>
+
+<!-- ================= SCRIPT MENU MOBILE ================= -->
+<script>
+  const toggle = document.querySelector('.menu-toggle');
+  const menu = document.querySelector('.lux-menu');
+
+  toggle.addEventListener('click', () => {
+    menu.classList.toggle('open');
+  });
+</script>
+
 </body>
 </html>
