@@ -17,6 +17,14 @@
     </div>
 
     <!-- Mobile menu button -->
+    <script>
+  const toggle = document.querySelector('.menu-toggle');
+  const menu = document.querySelector('.lux-menu');
+
+  toggle.addEventListener('click', () => {
+    menu.classList.toggle('open');
+  });
+</script>
     <button class="menu-toggle" aria-label="Ouvrir le menu">
       ☰
     </button>
