@@ -278,22 +278,79 @@ h2 {
   filter: brightness(0.9);
 }
 
-/* =========================
-   FOOTER
-   ========================= */
+ /* ================= FOOTER ================= */
 
 .site-footer {
-  background-color: #121212;
-  color: #e5e5e5;
-  padding: 60px 80px 30px;
-  font-size: 14px;
+  background: linear-gradient(
+    to top,
+    #0b0b0b 0%,
+    #121212 60%,
+    #161616 100%
+  );
+  padding: 80px 0 50px;
+  color: #b5b5b5;
+  font-family: 'Inter', sans-serif;
 }
 
 .footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  gap: 60px;
 }
+
+/* LEFT BLOCK */
+
+.footer-left {
+  max-width: 420px;
+}
+
+.footer-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #e6e6e6;
+  margin-bottom: 10px;
+}
+
+.footer-left p {
+  margin: 6px 0;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.footer-left a {
+  display: inline-block;
+  margin-top: 6px;
+  color: #c8a24a;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.footer-left a:hover {
+  opacity: 0.8;
+}
+
+.footer-copy {
+  margin-top: 24px;
+  font-size: 0.85rem;
+  color: #8a8a8a;
+}
+
+/* RIGHT BLOCK */
+
+.footer-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 18px;
+}
+
+/* SOCIAL ICONS */
 
 .footer-socials {
   display: flex;
@@ -301,39 +358,53 @@ h2 {
 }
 
 .footer-socials img {
-  width: 20px;
-  height: 20px;
-  filter: invert(1);
-  opacity: 0.8;
+  width: 18px;
+  height: 18px;
+  opacity: 0.75;
+  transition: opacity 0.2s ease;
 }
 
-.footer-socials img:hover {
+.footer-socials a:hover img {
   opacity: 1;
 }
 
-/* =========================
-   MOBILE
-   ========================= */
+/* LEGAL LINKS */
+
+.footer-legal {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-legal a {
+  font-size: 0.85rem;
+  color: #c8a24a;
+  text-decoration: none;
+}
+
+.footer-legal a:hover {
+  opacity: 0.8;
+}
+
+/* ================= MOBILE ================= */
 
 @media (max-width: 768px) {
-  h1 { font-size: 32px; }
-  h2 { font-size: 26px; }
-
-  .hero {
-    padding: 140px 0 100px;
-  }
-
-  .packages {
-    grid-template-columns: 1fr;
-  }
-
-  .site-footer {
-    padding: 50px 24px 30px;
-    text-align: center;
-  }
 
   .footer-container {
     flex-direction: column;
-    gap: 30px;
+    align-items: center;
+    text-align: center;
+    gap: 40px;
+  }
+
+  .footer-right {
+    align-items: center;
+  }
+
+  .footer-left {
+    max-width: 100%;
+  }
+
+  .footer-copy {
+    margin-top: 30px;
   }
 }
