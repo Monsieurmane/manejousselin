@@ -483,3 +483,46 @@ h2 {
     font-size: inherit;
   }
 }
+/* =========================
+   PROJECT SHOWCASE (HERO-LIKE)
+   ========================= */
+
+.project-showcase {
+  padding: 140px 0;
+  background:
+    linear-gradient(
+      rgba(20,20,20,0.88),
+      rgba(20,20,20,0.88)
+    ),
+    url("images/projects-cover.jpg") center / cover no-repeat;
+}
+
+.project-showcase h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 40px;
+  margin-bottom: 24px;
+  color: var(--soft-beige);
+}
+
+.project-text {
+  max-width: 560px;
+  font-size: 17px;
+  margin-bottom: 40px;
+  color: var(--muted-text);
+}
+@media (max-width: 768px) {
+
+  .project-showcase {
+    padding: 110px 0 90px;
+  }
+
+  .project-showcase h2 {
+    font-size: 26px;
+  }
+
+  .project-text {
+    font-size: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
