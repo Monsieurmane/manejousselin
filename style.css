@@ -416,3 +416,20 @@ h2 {
 .footer-socials a:hover img {
   opacity: 1;
 }
+/* ===== CTA SECTION RHYTHM FIX ===== */
+
+.cta-section {
+  text-align: center;
+}
+
+.cta-section h2 {
+  margin-bottom: 16px;
+}
+
+.cta-section .section-text {
+  margin-bottom: 32px;
+}
+
+.cta-section .btn {
+  margin-top: 0;
+}
