@@ -436,3 +436,50 @@ h2 {
 .section-text {
   margin-bottom: 32px;
 }
+/* =========================
+   MOBILE TYPOGRAPHY FIX
+   (excluding footer)
+   ========================= */
+@media (max-width: 768px) {
+
+  body {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  h1 {
+    font-size: 28px;
+    line-height: 1.15;
+  }
+
+  h2 {
+    font-size: 22px;
+    line-height: 1.25;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  .hero-text,
+  .section-text,
+  .process,
+  .package-desc,
+  .project-desc {
+    font-size: 15px;
+    line-height: 1.55;
+  }
+
+  .btn {
+    font-size: 12px;
+    padding: 12px 22px;
+    letter-spacing: 0.06em;
+  }
+
+  /* Keep footer untouched */
+  footer,
+  .site-footer,
+  .site-footer * {
+    font-size: inherit;
+  }
+}
